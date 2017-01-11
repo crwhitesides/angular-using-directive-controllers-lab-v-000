@@ -21,7 +21,11 @@ function ContactCard() {
 		].join(''),
 		controller: function ($filter) {
 			$filter('lowercase')();
-		},
+		}, 
+		// You could also do the following:
+		// controller: function ($scope) {
+			// $scope.username = $scope.username.toLowerCase();
+		// },
 		restrict: 'E'
 	};
 }
